@@ -1,0 +1,17 @@
+<h1>Walidacja numeru PESEL</h1>
+
+<form method="post">
+    <input type="text" name="pesel" placeholder="Wpisz numer PESEL" required>
+    <button type="submit">Sprawdź</button>
+</form>
+
+{% if pesel is not null %}
+    <p>Numer PESEL: <strong>{{ pesel }}</strong></p>
+    <p>Status: 
+        {% if is_valid %}
+            ✅ Poprawny
+        {% else %}
+            ❌ Niepoprawny
+        {% endif %}
+    </p>
+{% endif %}
