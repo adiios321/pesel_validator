@@ -21,14 +21,20 @@ Numer walidowany jest zgodnie z oficjalnym algorytmem (sprawdzenie sumy kontroln
 ## Uruchomienie:
 --------------
 1. Skopiuj lub sklonuj repozytorium:
-   git clone <adres-repozytorium>
+```
+   git clone git@github.com:adiios321/pesel_validator.git
    cd pesel_validator
+```
 
 2. Zainstaluj zależności:
+```
    composer install
+```
 
 3. Uruchom lokalny serwer:
+```
    symfony serve
+```
 
 4. Otwórz przeglądarkę:
    http://127.0.0.1:8000
@@ -38,7 +44,9 @@ Numer walidowany jest zgodnie z oficjalnym algorytmem (sprawdzenie sumy kontroln
 ## Testy jednostkowe:
 -------------------
 uruchom testy poleceniem:
+```
    php bin/phpunit
+```
 
 ## Przykładowe numery:
 ------------------------
